@@ -104,6 +104,10 @@ a {
   display: none;
 }
 
+#skills{
+  display: inline-block;
+}
+
 .orange {
   background-color: #f5ae23;
 }
@@ -124,12 +128,12 @@ a {
 }
 
 .dark-gray {
-  background-color: #4a4a4a;
+  background-color: #212121;
 }
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: #212121;
 }
 
 .flex-box {
@@ -154,6 +158,7 @@ ul {
   padding: 10px;
   width: 200px;
   display: none;
+  border-radius: 20px;
 }
 
 img {

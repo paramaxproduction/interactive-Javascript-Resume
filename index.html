@@ -5,20 +5,12 @@
   <link href="css/style.css" rel="stylesheet">
   <script src="js/jQuery.js"></script>
   <script src="js/helper.js"></script>
-
   <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
-
   <meta name="viewport" content="width=device-width">
 </head>
 <body>
   <div id="main">
 
-    <!--
-    Everything from here to the <script> tag below is the skeleton of your
-    website. Your code will add information to each of the sections of the
-    resume below. You can pretty easily figure out what each section will
-    display by looking at the id or at what's written between the <h2> tags.
-    -->
     <div id="header" class="center-content clear-fix">
       <ul id="topContacts" class="flex-box"></ul>
     </div>
@@ -32,6 +24,10 @@
     <div id="education" class="gray">
       <h2>Education</h2>
     </div>
+    <div id="skillsChart">
+      <h2>Skills Chart</h2>
+      <div id="container" style="min-width: 310px; height: 600px; max-width: 1200px; margin: 0 auto"></div>
+    </div>
     <div id="mapDiv">
       <h2>Where I've Lived and Worked</h2>
     </div>
@@ -43,17 +39,6 @@
 
   <script src="js/resumeBuilder.js"></script>
   <script type="text/javascript">
-    // Notice how all of a sudden there's JavaScript inside this HTML
-    // document? You can write JavaScript between <script> tags. At the end of your
-    // JavaScript, don't forget the closing script tag with the slash (/).
-
-    // Also, this is a JavaScript style comment. You can comment in JavaScript with:
-
-    //   two slashes for all following characters on a single line, or
-
-    /*
-        an opening and closing set of slash asterisks for block comments.
-    */
 
     if (document.getElementsByClassName('flex-item').length === 0) {
       document.getElementById('topContacts').style.display = 'none';
@@ -77,5 +62,8 @@
       document.getElementById('mapDiv').style.display = 'none';
     }
   </script>
+  <script src="js/d3.min.js"></script>
+  <script src="js/d3plus.js"></script>
+  <script src="js/pie.js"></script>
 </body>
 </html>
